@@ -13,6 +13,9 @@ import {Memorize} from "./06-memos/Memorize.jsx";
 import {MemoHook} from "./06-memos/MemoHook.jsx";
 import {CallBackHook} from "./06-memos/CallBackHook.jsx";
 import {Padre} from "./07-task-memo/Padre.jsx";
+// import './08-useReducer/intro-reduce';
+import {TodoApp} from "./08-useReducer/TodoApp.jsx";
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -27,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/*<Memorize/>*/}
     {/*<MemoHook/>*/}
     {/*<CallBackHook/>*/}
-    <Padre/>
+    {/*<Padre/>*/}
+    <TodoApp/>
   </React.StrictMode>,
 )
