@@ -2,12 +2,12 @@ import React, {useEffect, useReducer} from 'react';
 import {todoReducer} from "./todoReducer.js";
 import {TodoList} from "./TodoList.jsx";
 import {TodoAdd} from "./TodoAdd.jsx";
-import {UseTodo} from "./useTodo.js";
+import {useTodo} from "./useTodo.js";
 
 
 export const TodoApp = () => {
 
-    const {todos, todosCount, todosPending, onNewTodo, onToggleTodo, onDeleteTodo} = UseTodo();
+    const {todos, todosCount, todosPending, onNewTodo, onToggleTodo, onDeleteTodo} = useTodo();
 
     return (
         <>

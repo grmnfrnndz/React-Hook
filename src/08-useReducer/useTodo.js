@@ -7,7 +7,7 @@ const init = () => {
     return JSON.parse(localStorage.getItem('todos')) || [];
 }
 
-export const UseTodo = () => {
+export const useTodo = () => {
     const [todos, dispatchTodo] = useReducer(todoReducer, initialState, init);
 
     // detect when read create update delete

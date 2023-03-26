@@ -1,5 +1,5 @@
 import React from 'react';
-import {UseFetch, useCounter} from "../hooks";
+import {useFetch, useCounter} from "../hooks";
 import {LoadingQuote, Quote} from "../03-example";
 
 export const Layout = () => {
@@ -7,7 +7,7 @@ export const Layout = () => {
     const {counter, increment} = useCounter(1);
 
     const url = `https://api.breakingbadquotes.xyz/v1/quotes/${counter}`;
-    const {data, isLoading, hasError} = UseFetch(url);
+    const {data, isLoading, hasError} = useFetch(url);
 
     const {author, quote} = !!data && data[0];
 

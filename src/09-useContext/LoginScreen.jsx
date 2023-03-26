@@ -9,16 +9,14 @@ export const LoginScreen = () => {
         <>
             <h1>LoginScreen</h1>
             <hr/>
-            <pre>
+            <pre aria-label="pre">
                 {JSON.stringify(user, null, 3)}
             </pre>
 
             <button
                 className="btn btn-primary"
                 onClick={() => setUser({id: 123, name: 'german', 'age': 36})}
-            >
-                Set User
-            </button>
+            >Set User</button>
 
         </>
     );
